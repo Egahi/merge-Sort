@@ -1,7 +1,7 @@
 /**
  * mergeSort.cpp
  *
- * this program sorts a sequence of characters
+ * this program sorts a sequence of characters from least to greatest
  * using divide and conquer approach (leveraging recursion)
  *
  * s_egahi
@@ -39,6 +39,7 @@ int main(void)
 	randomNumbers[RANGE - ONE] = '\0';
 	cout << endl;
 
+	// print out the numbers
 	for (int i = ZERO; i < RANGE - ONE; i++)
 	{
 		cout << randomNumbers[i] << " ";
@@ -46,8 +47,10 @@ int main(void)
 
 	cout << endl;
 
+	// sort the sequence
 	mergeSort(randomNumbers, ONE, RANGE - ONE);
 
+	// print out the sorted numbers
 	for (int i = ZERO; i < RANGE - ONE; i++)
 	{
 		cout << randomNumbers[i] << " ";
